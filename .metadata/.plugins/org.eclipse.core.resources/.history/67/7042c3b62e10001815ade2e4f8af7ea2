@@ -1,0 +1,16 @@
+package b_Zadania_Domowe.a_Dzien_2;
+
+public class Main6 {
+
+    public static void main(String[] args) {
+
+    
+    replaceChar("to jest tekst to wymiany", "tekst", "nowy wiersz" );
+
+}
+static String replaceStr(String str, String forReplace, String replacement){
+	String result = str.replace(forReplace, replacement);
+	System.out.println(result);
+	return result;
+}
+}

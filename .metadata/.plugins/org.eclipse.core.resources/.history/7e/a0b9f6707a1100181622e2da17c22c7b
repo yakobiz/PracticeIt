@@ -1,0 +1,38 @@
+package b_Zadania_Domowe.a_Dzien_3;
+
+public class Main5 {
+
+	public static void main(String[] args) {
+		int tablica[] = { 1, 3, 2, 5, 5 };
+		elementExist(tablica, 7);
+	}
+
+	static int elementExist(int[] elements, int value) {
+		int result = 0;
+		for (int v : elements) {
+			if (v == value) {
+				System.out.println("Element " + value + " istnieje w tablicy");
+			} else {
+				System.out.println("Nie istnieje " + value + " w tablicy");
+			}
+		}
+		return result;
+
+	}
+}
+
+//
+//
+//
+// int[] arr = {1,5,4,8,6};
+// find(4,arr)
+//
+// static boolean find(int needle, int[] haystack){
+// if haystack==null){
+// throw InvalidParameterException("tablica jest null");
+// }
+// for (int v: haystack){
+// if (v == needle){
+// return true;
+// }
+// }

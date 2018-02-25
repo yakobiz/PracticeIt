@@ -1,0 +1,16 @@
+package exam;
+
+public class Main2 {
+	public static void main (String[] args){
+		shorten("To jest napis do skrócenia", 8);
+		
+	}
+	
+	static String shorten(String str, int length){
+		String shorten = "o";
+		
+		System.out.println(str.substring(0,length-1));
+		
+		return shorten;
+	}
+}

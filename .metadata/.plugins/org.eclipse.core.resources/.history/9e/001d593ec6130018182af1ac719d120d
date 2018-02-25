@@ -1,0 +1,24 @@
+package exam;
+
+import java.util.Scanner;
+
+public class Main5 {
+	public static void main(String[] args){
+		ball();
+	}
+	static double ball(){
+		int r = 0;
+		double obj =0;
+		double st = 4/3;
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Podaj	int");
+		
+		r = scan.nextInt();
+		
+		obj = st*Math.pow(r, 3)*Math.PI;
+		
+		System.out.println("Objetość kuli dla promienia r = " + r + " wynosi "+obj );
+		return 0;	
+	}
+}

@@ -1,0 +1,21 @@
+package b_Zadania_Domowe.a_Dzien_2;
+
+public class Main1 {
+
+	public static void main(String[] args) {
+
+		System.out.println(encode ("CodersLab"));
+
+	}
+
+	static String encode(String str) {
+		char x[] = str.toCharArray();
+
+		for (int i = 0; i <= x.length-1; i++) {
+			int n = x[i];
+			n += 3;
+			x[i] = (char) n;
+		}
+		return new String(x);
+	}
+}

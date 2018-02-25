@@ -1,0 +1,15 @@
+package exam;
+
+public class Main6 {
+	public static void main(String[] args) {
+		replaceStr("To jest napis do zamiany", "zamiany", "wydruku");
+	}
+
+	static String replaceStr(String str, String forReplace, String replacement) {
+
+		String newStr = str.replace(forReplace, replacement);
+
+		System.out.println("Zamienia " + str + " na " + newStr);
+		return str;
+	}
+}

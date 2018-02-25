@@ -1,0 +1,33 @@
+
+package exam;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main3 {
+public static void main(String[] args) {
+
+	div(0, 0);
+
+}
+
+static int[] div(int size, int interval) {
+
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Wprowadź rozmiar\n");
+	size = sc.nextInt();
+	System.out.println("Wprowadź zakres liczb\n");
+	interval = sc.nextInt();
+	Random r = new Random();
+	int a = r.nextInt(interval);
+	int[] tab = new int[size];
+	for (int i = 1; i < tab.length; i++) {
+		tab[i] = a;
+	}
+	sc.close();
+	for (int j = 0; j < tab.length; j++) {
+		System.out.print(tab[j] + ",	");
+	}
+	return tab;
+}
+}

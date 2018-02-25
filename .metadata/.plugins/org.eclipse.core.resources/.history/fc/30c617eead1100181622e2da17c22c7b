@@ -1,0 +1,36 @@
+package a_Zadania.d_Dzien_4.c_Pliki_nio;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.Scanner;
+
+public class Main4 {
+
+	public static void main(String[] args) {
+
+		try {
+			writeToFile("Nowy plik");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Scanner scan = new Scanner(System.in);
+		try {
+			PrintWriter zapisDoPliku = new PrintWriter("Nowy plik");
+			zapisDoPliku.println(scan.hasNextLine());
+			zapisDoPliku.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		scan.close();
+	}
+
+	static void writeToFile(String fileName) throws IOException {
+		Files.createFile(Paths.get(fileName));
+	}
+
+}

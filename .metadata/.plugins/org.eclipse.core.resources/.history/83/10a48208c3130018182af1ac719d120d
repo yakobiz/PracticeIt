@@ -1,0 +1,28 @@
+package exam;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Main4 {
+
+	public static void main(String[] args) {
+
+	}
+
+	static int[] returnTab(int n) {
+		int[] reTab = new int[n];
+		System.out.println("Podaj	int");
+		Scanner scan = new Scanner(System.in);
+		try {
+			int number = scan.nextInt();
+			for (int i = 0; i < n; i++) {
+				reTab[i] = i + 1;
+			}
+		} catch (InputMismatchException e) {
+			System.out.println("Niepoprawne	dane	–	wpisz	liczbę");
+		scan.close();
+		}
+		System.out.println(reTab.toString()+" ,");
+		return reTab;
+	}
+}

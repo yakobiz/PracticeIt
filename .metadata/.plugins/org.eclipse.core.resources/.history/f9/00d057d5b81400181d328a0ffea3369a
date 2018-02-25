@@ -1,0 +1,44 @@
+package a_Zadania.a_Dzien_1.d_Konstruktor;
+
+public class Calculator {
+String [] array;
+	public Calculator(){
+	this.array = new String[0];
+}
+	private void addToArray(String msg){
+	int arraySize = array.length;
+	String[] newArray = new String[arraySize +1];
+	for (int i =0; i<arraySize; i++){
+		newArray[i] = array[i];
+	}
+	newArray[arraySize] = msg;
+	this.array =newArray;
+
+	}
+	public double add(double num1, double num2){
+		double result = num1 + num2;
+		addToArray("added " + num1 + " to " + num2 + " got "+ result + "\n");
+		return result;
+	}
+	
+	public double multiply(double num1, double num2){
+		double result = num1 * num2;
+		addToArray("added " + num1 + " to " + num2 + " got "+ result + "\n");
+		return result;
+	}
+	public double subtract(double num1, double num2){
+		double result = num1 - num2;
+		addToArray("added " + num1 + " to " + num2 + " got "+ result + "\n");
+		return result;
+	}
+	public double divide(double num1, double num2){
+		double result = (num1 / num2);
+		addToArray("added " + num1 + " to " + num2 + " got "+ result + "\n");
+		return result;
+	}
+	
+	public String printOperations(){
+		String result = array.toString();
+		return result;
+	}
+}

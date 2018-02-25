@@ -1,0 +1,26 @@
+package b_Zadania_Domowe.a_Dzien_2;
+
+
+public class Main2 {
+
+    public static void main(String[] args) {
+
+
+		System.out.println(encode ("CodersLabZ", 9));
+		System.out.println(encode ("zzZ", 9));
+		System.out.println(encode ("yyy", 9));
+		System.out.println(encode ("xxx", 9));
+	}
+
+	static String encode(String str, int shift) {
+		char[]midStr = str.toCharArray();
+
+		for (int i = 0; i != midStr.length; i++) {
+			int n = midStr[i];
+			n += shift;
+			midStr[i] = (char) n;
+		}
+		return new String(midStr);
+	}
+
+}

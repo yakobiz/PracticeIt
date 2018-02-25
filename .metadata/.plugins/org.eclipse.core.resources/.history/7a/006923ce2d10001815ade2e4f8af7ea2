@@ -1,0 +1,15 @@
+package b_Zadania_Domowe.a_Dzien_2;
+
+
+public class Main5 {
+
+    public static void main(String[] args) {
+    	replaceChar("to jest tekst to wymiany", 't', 'T' );
+
+    }
+    static String replaceChar(String str, char forReplace, char replacement){
+    	String result = str.replace(forReplace, replacement);
+    	System.out.println(str);
+    	return result;
+    }
+}

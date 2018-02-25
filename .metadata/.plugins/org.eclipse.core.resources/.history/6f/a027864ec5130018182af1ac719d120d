@@ -1,0 +1,13 @@
+package exam;
+
+public class Main5 {
+	public static void main(String[] args){
+		
+	}
+	static double ball(){
+		
+		
+		
+		return 0;	
+	}
+}

@@ -1,0 +1,17 @@
+package b_Zadania_Domowe.a_Dzien_2;
+
+public class Main3 {
+
+	public static void main(String[] args) {
+		System.out.println(upperCase("Uczę się programować i nic z tego nie wychodzi", 3));
+
+	}
+
+	static String upperCase(String str, int index) {
+			for (int i=0; i != str.length(); i++){		
+				String strUpp = str.substring(i*index-1,i*index).toUpperCase();
+				String strNew = str.substring(0,index-1) + str.substring(i*index+1,str.length());
+			}
+		return new String (str);
+	}
+}

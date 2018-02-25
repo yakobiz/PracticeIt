@@ -1,0 +1,35 @@
+package a_Zadania.d_Dzien_4.c_Pliki_nio;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class Main5 {
+
+	public static void main(String[] args) throws FileNotFoundException {
+readFromFile("PanTadeusz.txt");
+		
+	}
+
+	static void readFromFile(String fileName) throws FileNotFoundException {
+		File file = new File(fileName);
+		StringBuilder reading = new StringBuilder();
+		try {
+			Scanner scan = new Scanner(file);
+			while (scan.hasNextLine()) {
+				reading.append(scan.nextLine() + "\n");
+			}
+		} catch (FileNotFoundException e) {
+			System.out.println("Brak pliku");
+		}
+PrintWriter zapis = new PrintWriter(fileName);
+		
+		zapis.print(reading.toString());
+		zapis.close();
+		
+		
+//		System.out.println(reading.toString());
+	}
+
+}

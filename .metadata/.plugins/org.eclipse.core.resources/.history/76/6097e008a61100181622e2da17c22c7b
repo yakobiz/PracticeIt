@@ -1,0 +1,26 @@
+package a_Zadania.d_Dzien_4.c_Pliki_nio;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+public class Main3 {
+
+    public static void main(String[] args) {
+
+    	copyFile("/home/kuba/workspace/WAR_JEE_S_04_Podstawy","NowyPlik.txt","NowyPlik2.txt");
+    }
+    static void copyFile(String directory, String fileName, String secondFileName){
+    	if (!Files.exists(Paths.get(fileName))) {
+			System.out.println("NIE istnieje taki plik o nazwie \"" + fileName );
+		}
+    	try {
+			Files.copy(Paths.get("NowyPlik.txt"), Paths.get("NowyPlik2.txt"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	
+    }
+
+}

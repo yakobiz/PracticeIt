@@ -1,0 +1,12 @@
+package a_Zadania.a_Dzien_1.d_Konstruktor;
+
+public class Main2calculator {
+	public static void main (String [] args){
+Calculator cal1 = new Calculator();
+
+System.out.println(cal1.divide(6,2));
+
+ cal1.printOperations();
+ 
+	}
+}

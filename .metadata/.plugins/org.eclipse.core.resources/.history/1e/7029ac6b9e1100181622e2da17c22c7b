@@ -1,0 +1,29 @@
+package a_Zadania.d_Dzien_4.c_Pliki_nio;
+
+import java.io.IOException;
+import java.nio.file.*;
+
+public class Main1 {
+
+	public static void main(String[] args) throws IOException {
+
+		createDirectory("NowyKatalog");
+		createDirectory("NowyKatalog2");
+		createDirectory("NowyKatalog3");
+		createDirectory("NowyKatalog4");
+	}
+
+	static void createDirectory(String fileName) throws IOException {
+		if (!Files.exists(Paths.get(fileName))) {
+			System.out.println("NIE istniał taki katalog o nazwie \"" + fileName + "\"" + " ale został utworzony ");
+		}
+
+		try {
+			Files.createDirectory(Paths.get(fileName));
+
+		} catch (FileAlreadyExistsException e) {
+			System.out.println("Folder już istnieje!");
+
+		}
+	}
+}

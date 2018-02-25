@@ -1,0 +1,20 @@
+package b_Zadania_Domowe.a_Dzien_2;
+
+public class Main3 {
+
+	public static void main(String[] args) {
+		System.out.println(upperCase("Uczę się programować i nic z tego nie wychodzi", 3));
+
+	}
+
+	static String upperCase(String str, int index) {
+		StringBuffer sb = new StringBuffer();
+		sb.append(str.substring(0, index-1));
+		for (int i = 1; i != str.length(); i++) {
+			sb.append(str.substring((i * index) - 1, i * index).toUpperCase());
+//			sb.append(str.substring((i * index) + 1, (i + 1) * index));
+		}
+		System.out.println(sb.toString());
+		return new String(str);
+	}
+}

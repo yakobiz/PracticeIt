@@ -1,0 +1,22 @@
+package a_Zadania.d_Dzien_4.c_Pliki_nio;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+public class Main4 {
+
+    public static void main(String[] args) {
+
+    	try {
+			writeToFile("Nowy plik");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    }
+    static void writeToFile(String fileName) throws IOException{
+    	Files.createFile(Paths.get(fileName));
+    }
+
+}

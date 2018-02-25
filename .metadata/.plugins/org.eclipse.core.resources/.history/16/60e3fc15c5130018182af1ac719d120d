@@ -1,0 +1,29 @@
+package exam;
+
+import java.util.Scanner;
+
+public class Main4 {
+
+	public static void main(String[] args) {
+
+		returnTab();
+	}
+
+	static int[] returnTab() {
+
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Podaj	int");
+		int n = 0;
+
+		n = scan.nextInt();
+		int[] reTab = new int[n];
+		for (int i = 0; i < n; i++) {
+			reTab[i] = i;
+		}
+		System.out.println(reTab.toString() + " ,");
+
+		scan.close();
+		return reTab;
+	}
+
+}
