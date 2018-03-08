@@ -1,14 +1,15 @@
+package BPJ4;
 import java.util.Scanner;
 
 public class Spending {
 
 	public static void main(String[] args) {
-		spending( null, "John");
-		spending( null, "Jane");
-		
-		
+		spending(null, "John");
+		spending(null, "Jane");
+
 	}
 
+	@SuppressWarnings("null")
 	public static void spending(Scanner console, String name) {
 		console = new Scanner(System.in);
 		System.out.print("How much will " + name + " be spending? ");
@@ -20,18 +21,13 @@ public class Spending {
 		if ((numBills * 20.0) < amount) {
 			numBills++;
 		}
-		
 		if (name.equals("John")) {
 			int numBills1 = numBills;
-			
+			System.out.println("John needs " + numBills1 + " bills.");
 		}
-		else if (name.equals("Jane")) {
+		if (name.equals("Jane")) {
 			int numBills2 = numBills;
-			
+			System.out.println("Jane needs " + numBills2 + " bills.");
 		}
-		System.out.println("John needs " + numBills1 + " bills.");
-		System.out.println("Jane needs " + numBills2 + " bills.");
-
-		console.close();
 	}
 }

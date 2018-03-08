@@ -1,5 +1,6 @@
+package BPJ4;
 
-public class forToWhile {
+public class ForToWhile {
 
 	public static void main(String[] args) {
 		//  a.
@@ -23,34 +24,33 @@ public class forToWhile {
 		System.out.println();
 
 		//  c.
-				System.out.println("c.");
-				int i = 1;
-				
-				
-				while ( i <= 2 ) { 
-					int j = 1;
-					while ( j <= 3 ) {
-						int k = 1;
-						while ( k <= 4 ) {
-							System.out.print("*");
-							k++;
-						}
-						System.out.print("!");
-						j++;
-					}
-					System.out.println();
-					i++;
-				} 
-				System.out.println();
+		System.out.println("c.");
+		int i = 1;
+
+		while (i <= 2) {
+			int j = 1;
+			while (j <= 3) {
+				int k = 1;
+				while (k <= 4) {
+					System.out.print("*");
+					k++;
+				}
+				System.out.print("!");
+				j++;
+			}
+			System.out.println();
+			i++;
+		}
+		System.out.println();
 
 		//  d.
 		System.out.println("d.");
 		int numbeR = 4;
 		int counT = 1;
-		while ( counT <= numbeR) {
+		while (counT <= numbeR) {
 			System.out.println(numbeR);
-			numbeR = +numbeR/2;
-			 counT++;
+			numbeR = +numbeR / 2;
+			counT++;
 		}
 
 	}

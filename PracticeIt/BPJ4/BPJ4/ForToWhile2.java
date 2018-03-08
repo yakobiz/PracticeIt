@@ -1,18 +1,18 @@
+package BPJ4;
 
-public class forToWhile2 {
+public class ForToWhile2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//  c.
 		System.out.println("c.");
 		int i = 1;
-		
-		
-		while ( i <= 2 ) { 
+
+		while (i <= 2) {
 			int j = 1;
-			while ( j <= 3 ) {
+			while (j <= 3) {
 				int k = 1;
-				while ( k <= 4 ) {
+				while (k <= 4) {
 					System.out.print("*");
 					k++;
 				}
@@ -21,7 +21,7 @@ public class forToWhile2 {
 			}
 			System.out.println();
 			i++;
-		} 
+		}
 		System.out.println();
 	}
 
